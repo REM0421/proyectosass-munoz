@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Overpass:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2fr 1fr); }
+  header div {
+    background-color: #6096B4;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header div h1 {
+      font-size: 120px;
+      letter-spacing: 5px;
+      color: #FFFFFF;
+      font-family: 'PT Sans Narrow', sans-serif; }
+  header nav {
+    background-color: #EEE9DA;
+    border: 1px solid #000000; }
+    header nav ul {
+      list-style-type: none;
+      font-family: 'Inconsolata', monospace;
+      font-size: 50px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #000000; }
+        header nav ul li a:hover {
+          font-size: 65px;
+          margin-top: 10px; }
+
+.mainIndex {
+  background-image: url(../assets/fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  align-items: center; }
+  .mainIndex div {
+    font-size: 48px;
+    margin: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+footer {
+  background-color: #93bfcf;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 2fr;
+  grid-template-rows: repeat(2 1fr);
+  grid-template-areas: " . item1 item1 . item3" " . item2 item2 . item4"; }
+  footer .selectGrid1 {
+    grid-area: item1;
+    justify-self: center;
+    align-self: end;
+    font-size: 70px; }
+  footer .selectGrid2 {
+    grid-area: item2;
+    justify-self: center;
+    align-self: center;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly; }
+  footer .selectGrid3 {
+    grid-area: item3;
+    font-size: 70px;
+    justify-self: center;
+    align-self: end; }
+  footer .selectGrid4 {
+    grid-area: item4;
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly; }
